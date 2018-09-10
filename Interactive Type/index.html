@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Interactive Typography</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <div id="alphabet">
+      <div class="row row1">
+        <div class="letter col1" id="A">
+          <img class="black" id="blackA" src="images/blackA-8.png" >
+          <svg class="circle" height="180" width="180">
+            <circle class="circle1" cx="90" cy="90" r="90"/>
+          </svg>
+          </circle>
+          </svg>
+          <svg class="circle" height="180" width="180">
+            <circle class="circle2" cx="90" cy="90" r="66"/>
+            </svg>
+          </circle>
+          </svg>
+          <svg class="circle circle3" height="180" width="180">
+            <circle cx="90" cy="90" r="46"/>
+            </svg>
+          </circle>
+          </svg>
+          <img class="white" id="whiteA" src="images/whiteA-8.png" >
+          <svg class="circle" height="180" width="180">
+            <circle class="innerCircle" cx="90" cy="90" r="27"/>
+            </svg>
+          </circle>
+          </svg>
+        </div>
+        <div class="letter col2" id="B">
+          <img class="black" id="blackB" src="images/b-8.png" >
+          <svg class="circle" height="180" width="180">
+            <circle class="circle1" cx="90" cy="90" r="90"/>
+          </svg>
+          </circle>
+          </svg>
+          <svg class="circle" height="180" width="180">
+            <circle class="circle2" cx="90" cy="90" r="66"/>
+            </svg>
+          </circle>
+          </svg>
+          <svg class="circle circle3" height="180" width="180">
+            <circle cx="90" cy="90" r="46"/>
+            </svg>
+          </circle>
+          </svg>
+          <img class="white" id="whiteB" src="images/whiteB-8.png" >
+          <svg class="circle" height="180" width="180">
+            <circle class="innerCircle" cx="90" cy="90" r="27"/>
+            </svg>
+          </circle>
+          </svg>
+        </div>
+        <div class="letter col3" id="C">
+          <img class="black rotate270" id="blackC" src="images/blackA-8.png">
+          <svg class="circle" height="180" width="180">
+            <circle class="circle1" cx="90" cy="90" r="90"/>
+          </svg>
+          </circle>
+          </svg>
+          <svg class="circle" height="180" width="180">
+            <circle class="circle2" cx="90" cy="90" r="66"/>
+            </svg>
+          </circle>
+          </svg>
+          <svg class="circle circle3" height="180" width="180">
+            <circle cx="90" cy="90" r="46"/>
+            </svg>
+          </circle>
+          </svg>
+          <img class="white rotate270" id="whiteC" src="images/whiteA-8.png" >
+          <svg class="circle" height="180" width="180">
+            <circle class="innerCircle" cx="90" cy="90" r="27"/>
+            </svg>
+          </circle>
+          </svg>
+        </div>
+      </div>
+      <div class="row row2">
+        <div class="letter col1" id="D">
+          <img class="black flipX" id="blackD" src="images/b-8.png" >
+          <svg class="circle" height="180" width="180">
+            <circle class="circle1" cx="90" cy="90" r="90"/>
+          </svg>
+          </circle>
+          </svg>
+          <svg class="circle" height="180" width="180">
+            <circle class="circle2" cx="90" cy="90" r="66"/>
+            </svg>
+          </circle>
+          </svg>
+          <svg class="circle circle3" height="180" width="180">
+            <circle cx="90" cy="90" r="46"/>
+            </svg>
+          </circle>
+          </svg>
+          <img class="white flipX" id="whiteD" src="images/whiteB-8.png" >
+          <svg class="circle" height="180" width="180">
+            <circle class="innerCircle" cx="90" cy="90" r="27"/>
+            </svg>
+          </circle>
+          </svg>
+        </div>
+        <div class="letter col2" id="E">
+          <img class="black" id="blackE" src="images/blackE-8.png" >
+          <svg class="circle" height="180" width="180">
+            <circle class="circle1" cx="90" cy="90" r="90"/>
+          </svg>
+          </circle>
+          </svg>
+          <svg class="circle" height="180" width="180">
+            <circle class="circle2" cx="90" cy="90" r="66"/>
+            </svg>
+          </circle>
+          </svg>
+          <svg class="circle circle3" height="180" width="180">
+            <circle cx="90" cy="90" r="46"/>
+            </svg>
+          </circle>
+          </svg>
+          <svg class="circle" id="specialInner" height="180" width="180">
+            <circle class="innerCircle" cx="90" cy="90" r="27"/>
+            </svg>
+          </circle>
+          </svg>
+          <div id="circleBottom">
+            <svg class="circle" height="180" width="180">
+              <circle class="circle1" cx="90" cy="90" r="90"/>
+            </svg>
+            </circle>
+            </svg>
+            <svg class="circle" height="180" width="180">
+              <circle class="circle2" cx="90" cy="90" r="66"/>
+              </svg>
+            </circle>
+            </svg>
+            <svg class="circle circle3" height="180" width="180">
+              <circle cx="90" cy="90" r="46"/>
+              </svg>
+            </circle>
+            </svg>
+            <img class="white" id="whiteE" src="images/whiteE-8.png" >
+            <svg class="circle" id="specialInner" height="180" width="180">
+              <circle class="innerCircle" cx="90" cy="90" r="27"/>
+              </svg>
+            </circle>
+            </svg>
+          </div>
+        </div>
+        <div class="letter col3" id="F">
+          <img class="black" id="blackF" src="images/blackF-8.png">
+          <svg class="circle" height="180" width="180">
+            <circle class="circle1" cx="90" cy="90" r="90"/>
+          </svg>
+          </circle>
+          </svg>
+          <svg class="circle" height="180" width="180">
+            <circle class="circle2" cx="90" cy="90" r="66"/>
+            </svg>
+          </circle>
+          </svg>
+          <svg class="circle circle3" height="180" width="180">
+            <circle cx="90" cy="90" r="46"/>
+            </svg>
+          </circle>
+          </svg>
+          <img class="white rotate270" id="whiteC" src="images/whiteA-8.png" >
+          <svg class="circle" height="180" width="180">
+            <circle class="innerCircle" cx="90" cy="90" r="27"/>
+            </svg>
+          </circle>
+          </svg>
+        </div>
+      </div>
+      <div class="row row3">
+        <div class="letter col1" id="G">
+          <img class="black" id="blackG" src="images/blackG-8.png" >
+          <svg class="circle" height="180" width="180">
+            <circle class="circle1" cx="90" cy="90" r="90"/>
+          </svg>
+          </circle>
+          </svg>
+          <svg class="circle" height="180" width="180">
+            <circle class="circle2" cx="90" cy="90" r="66"/>
+            </svg>
+          </circle>
+          </svg>
+          <svg class="circle circle3" height="180" width="180">
+            <circle cx="90" cy="90" r="46"/>
+            </svg>
+          </circle>
+          </svg> 
+          <svg class="circle" height="180" width="180">
+            <circle class="innerCircle" cx="90" cy="90" r="27"/>
+            </svg>
+          </circle>
+          </svg>
+        </div>
+        <div class="letter col2" id="H">
+          <img class="black" id="blackH" src="images/blackH-8.png" >
+          <svg class="circle" height="180" width="180">
+            <circle class="circle1" cx="90" cy="90" r="90"/>
+          </svg>
+          </circle>
+          </svg>
+          <svg class="circle" height="180" width="180">
+            <circle class="circle2" cx="90" cy="90" r="66"/>
+            </svg>
+          </circle>
+          </svg>
+          <svg class="circle circle3" height="180" width="180">
+            <circle cx="90" cy="90" r="46"/>
+            </svg>
+          </circle>
+          </svg>
+          <img class="white" id="whiteH" src="images/whiteH-8.png" >
+          <svg class="circle" height="180" width="180">
+            <circle class="innerCircle" cx="90" cy="90" r="27"/>
+            </svg>
+          </circle>
+          </svg>
+        </div>
+        <div class="letter col3" id="I">
+          <img class="black" id="blackI" src="images/blackI-8.png">
+          <svg class="circle" height="180" width="180">
+            <circle class="circle1" cx="90" cy="90" r="90"/>
+          </svg>
+          </circle>
+          </svg>
+          <svg class="circle" height="180" width="180">
+            <circle class="circle2" cx="90" cy="90" r="66"/>
+            </svg>
+          </circle>
+          </svg>
+          <svg class="circle circle3" height="180" width="180">
+            <circle cx="90" cy="90" r="46"/>
+            </svg>
+          </circle>
+          </svg>
+          <img class="white" id="whiteI" src="images/whiteI-8.png" >
+          <svg class="circle" height="180" width="180">
+            <circle class="innerCircle" cx="90" cy="90" r="27"/>
+            </svg>
+          </circle>
+          </svg>
+        </div>
+      </div>
+      <div class="row row4">
+        <div class="letter col1" id="J">
+          <img class="black" id="blackJ" src="images/blackJ-8.png" >
+          <svg class="circle" height="180" width="180">
+            <circle class="circle1" cx="90" cy="90" r="90"/>
+          </svg>
+          </circle>
+          </svg>
+          <svg class="circle" height="180" width="180">
+            <circle class="circle2" cx="90" cy="90" r="66"/>
+            </svg>
+          </circle>
+          </svg>
+          <svg class="circle circle3" height="180" width="180">
+            <circle cx="90" cy="90" r="46"/>
+            </svg>
+          </circle>
+          </svg> 
+          <img class="white" id="whiteJ" src="images/whiteJ-8.png" >
+          <svg class="circle" height="180" width="180">
+            <circle class="innerCircle" cx="90" cy="90" r="27"/>
+            </svg>
+          </circle>
+          </svg>
+        </div>
+        <div class="letter col2" id="K">
+          <img class="black" id="blackK" src="images/blackK-8.png" >
+          <svg class="circle" height="180" width="180">
+            <circle class="circle1" cx="90" cy="90" r="90"/>
+          </svg>
+          </circle>
+          </svg>
+          <svg class="circle" height="180" width="180">
+            <circle class="circle2" cx="90" cy="90" r="66"/>
+            </svg>
+          </circle>
+          </svg>
+          <svg class="circle circle3" height="180" width="180">
+            <circle cx="90" cy="90" r="46"/>
+            </svg>
+          </circle>
+          </svg>
+          <img class="white" id="whiteK" src="images/whiteK-8.png" >
+          <svg class="circle" height="180" width="180">
+            <circle class="innerCircle" cx="90" cy="90" r="27"/>
+            </svg>
+          </circle>
+          </svg>
+        </div>
+        <div class="letter col3" id="L">
+          <img class="black" id="blackL" src="images/blackL-8.png">
+          <svg class="circle" height="180" width="180">
+            <circle class="circle1" cx="90" cy="90" r="90"/>
+          </svg>
+          </circle>
+          </svg>
+          <svg class="circle" height="180" width="180">
+            <circle class="circle2" cx="90" cy="90" r="66"/>
+            </svg>
+          </circle>
+          </svg>
+          <svg class="circle circle3" height="180" width="180">
+            <circle cx="90" cy="90" r="46"/>
+            </svg>
+          </circle>
+          </svg>
+          <img class="white" id="whiteL" src="images/whiteL-8.png" >
+          <svg class="circle" height="180" width="180">
+            <circle class="innerCircle" cx="90" cy="90" r="27"/>
+            </svg>
+          </circle>
+          </svg>
+        </div>
+      </div>
+      <div class="row row5">
+        <div class="letter col1 rotate90" id="M">
+          <img class="black" id="blackM" src="images/blackE-8.png" >
+          <svg class="circle" height="180" width="180">
+            <circle class="circle1" cx="90" cy="90" r="90"/>
+          </svg>
+          </circle>
+          </svg>
+          <svg class="circle" height="180" width="180">
+            <circle class="circle2" cx="90" cy="90" r="66"/>
+            </svg>
+          </circle>
+          </svg>
+          <svg class="circle circle3" height="180" width="180">
+            <circle cx="90" cy="90" r="46"/>
+            </svg>
+          </circle>
+          </svg>
+          <svg class="circle" id="specialInner" height="180" width="180">
+            <circle class="innerCircle" cx="90" cy="90" r="27"/>
+            </svg>
+          </circle>
+          </svg>
+          <div id="circleBottom">
+            <svg class="circle" height="180" width="180">
+              <circle class="circle1" cx="90" cy="90" r="90"/>
+            </svg>
+            </circle>
+            </svg>
+            <svg class="circle" height="180" width="180">
+              <circle class="circle2" cx="90" cy="90" r="66"/>
+              </svg>
+            </circle>
+            </svg>
+            <svg class="circle circle3" height="180" width="180">
+              <circle cx="90" cy="90" r="46"/>
+              </svg>
+            </circle>
+            </svg>
+            <img class="white" id="whiteM" src="images/whiteE-8.png" >
+            <svg class="circle" id="specialInner" height="180" width="180">
+              <circle class="innerCircle" cx="90" cy="90" r="27"/>
+              </svg>
+            </circle>
+            </svg>
+          </div>
+        </div>
+        <div class="letter col2" id="N">
+          <img class="black" id="blackN" src="images/blackA-8.png" >
+          <svg class="circle" height="180" width="180">
+            <circle class="circle1" cx="90" cy="90" r="90"/>
+          </svg>
+          </circle>
+          </svg>
+          <svg class="circle" height="180" width="180">
+            <circle class="circle2" cx="90" cy="90" r="66"/>
+            </svg>
+          </circle>
+          </svg>
+          <svg class="circle circle3" height="180" width="180">
+            <circle cx="90" cy="90" r="46"/>
+            </svg>
+          </circle>
+          </svg>
+          <img class="white" id="whiteN" src="images/whiteA-8.png" >
+          <svg class="circle" height="180" width="180">
+            <circle class="innerCircle" cx="90" cy="90" r="27"/>
+            </svg>
+          </circle>
+          </svg>
+        </div>
+        <div class="letter col3" id="O">
+          <img class="black" id="blackO" src="images/blackO-8.png">
+          <svg class="circle" height="180" width="180">
+            <circle class="circle1" cx="90" cy="90" r="90"/>
+          </svg>
+          </circle>
+          </svg>
+          <svg class="circle" height="180" width="180">
+            <circle class="circle2" cx="90" cy="90" r="66"/>
+            </svg>
+          </circle>
+          </svg>
+          <svg class="circle circle3" height="180" width="180">
+            <circle cx="90" cy="90" r="46"/>
+            </svg>
+          </circle>
+          </svg>
+          <svg class="circle" height="180" width="180">
+            <circle class="innerCircle" cx="90" cy="90" r="27"/>
+            </svg>
+          </circle>
+          </svg>
+        </div>
+      </div>
+      <div class="row row6">
+        <div class="letter col1 flipX" id="P">
+          <img class="black" id="blackP" src="images/blackG-8.png" >
+          <svg class="circle" height="180" width="180">
+            <circle class="circle1" cx="90" cy="90" r="90"/>
+          </svg>
+          </circle>
+          </svg>
+          <svg class="circle" height="180" width="180">
+            <circle class="circle2" cx="90" cy="90" r="66"/>
+            </svg>
+          </circle>
+          </svg>
+          <svg class="circle circle3" height="180" width="180">
+            <circle cx="90" cy="90" r="46"/>
+            </svg>
+          </circle>
+          </svg> 
+          <svg class="circle" height="180" width="180">
+            <circle class="innerCircle" cx="90" cy="90" r="27"/>
+            </svg>
+          </circle>
+          </svg>
+        </div>
+        <div class="letter col2" id="Q">
+          <img class="black" id="blackQ" src="images/blackQ-8.png">
+          <svg class="circle" height="180" width="180">
+            <circle class="circle1" cx="90" cy="90" r="90"/>
+          </svg>
+          </circle>
+          </svg>
+          <svg class="circle" height="180" width="180">
+            <circle class="circle2" cx="90" cy="90" r="66"/>
+            </svg>
+          </circle>
+          </svg>
+          <svg class="circle circle3" height="180" width="180">
+            <circle cx="90" cy="90" r="46"/>
+            </svg>
+          </circle>
+          </svg>
+          <svg class="circle" height="180" width="180">
+            <circle class="innerCircle" cx="90" cy="90" r="27"/>
+            </svg>
+          </circle>
+          </svg>
+        </div>
+        <div class="letter col3 flipY" id="R">
+          <img class="black" id="blackR" src="images/blackL-8.png">
+          <svg class="circle" height="180" width="180">
+            <circle class="circle1" cx="90" cy="90" r="90"/>
+          </svg>
+          </circle>
+          </svg>
+          <svg class="circle" height="180" width="180">
+            <circle class="circle2" cx="90" cy="90" r="66"/>
+            </svg>
+          </circle>
+          </svg>
+          <svg class="circle circle3" height="180" width="180">
+            <circle cx="90" cy="90" r="46"/>
+            </svg>
+          </circle>
+          </svg>
+          <img class="white" id="whiteR" src="images/whiteL-8.png" >
+          <svg class="circle" height="180" width="180">
+            <circle class="innerCircle" cx="90" cy="90" r="27"/>
+            </svg>
+          </circle>
+          </svg>
+        </div>
+      </div>
+      <div class="row row7">
+        <div class="letter col1" id="S">
+          <img class="black" id="blackS" src="images/blackS-8.png" >
+          <svg class="circle" height="180" width="180">
+            <circle class="circle1" cx="90" cy="90" r="90"/>
+          </svg>
+          </circle>
+          </svg>
+          <svg class="circle" height="180" width="180">
+            <circle class="circle2" cx="90" cy="90" r="66"/>
+            </svg>
+          </circle>
+          </svg>
+          <svg class="circle circle3" height="180" width="180">
+            <circle cx="90" cy="90" r="46"/>
+            </svg>
+          </circle>
+          </svg>
+          <svg class="circle" id="specialInner" height="180" width="180">
+            <circle class="innerCircle" cx="90" cy="90" r="27"/>
+            </svg>
+          </circle>
+          </svg>
+          <div id="circleBottom">
+            <svg class="circle" height="180" width="180">
+              <circle class="circle1" cx="90" cy="90" r="90"/>
+            </svg>
+            </circle>
+            </svg>
+            <svg class="circle" height="180" width="180">
+              <circle class="circle2" cx="90" cy="90" r="66"/>
+              </svg>
+            </circle>
+            </svg>
+            <svg class="circle circle3" height="180" width="180">
+              <circle cx="90" cy="90" r="46"/>
+              </svg>
+            </circle>
+            </svg>
+            <img class="white" id="whiteS" src="images/whiteS-8.png" >
+            <svg class="circle" id="specialInner" height="180" width="180">
+              <circle class="innerCircle" cx="90" cy="90" r="27"/>
+              </svg>
+            </circle>
+            </svg>
+          </div>
+        </div>
+        <div class="letter col2" id="T">
+          <img class="black" id="blackT" src="images/blackT-8.png">
+          <svg class="circle" height="180" width="180">
+            <circle class="circle1" cx="90" cy="90" r="90"/>
+          </svg>
+          </circle>
+          </svg>
+          <svg class="circle" height="180" width="180">
+            <circle class="circle2" cx="90" cy="90" r="66"/>
+            </svg>
+          </circle>
+          </svg>
+          <svg class="circle circle3" height="180" width="180">
+            <circle cx="90" cy="90" r="46"/>
+            </svg>
+          </circle>
+          </svg>
+          <img class="white" id="whiteT" src="images/whiteT-8.png" >
+          <svg class="circle" height="180" width="180">
+            <circle class="innerCircle" cx="90" cy="90" r="27"/>
+            </svg>
+          </circle>
+          </svg>
+        </div>
+        <div class="letter col3 flipY" id="U">
+          <img class="black" id="blackU" src="images/blackA-8.png" >
+          <svg class="circle" height="180" width="180">
+            <circle class="circle1" cx="90" cy="90" r="90"/>
+          </svg>
+          </circle>
+          </svg>
+          <svg class="circle" height="180" width="180">
+            <circle class="circle2" cx="90" cy="90" r="66"/>
+            </svg>
+          </circle>
+          </svg>
+          <svg class="circle circle3" height="180" width="180">
+            <circle cx="90" cy="90" r="46"/>
+            </svg>
+          </circle>
+          </svg>
+          <img class="white" id="whiteU" src="images/whiteA-8.png" >
+          <svg class="circle" height="180" width="180">
+            <circle class="innerCircle" cx="90" cy="90" r="27"/>
+            </svg>
+          </circle>
+          </svg>
+        </div>
+      </div>
+      <div class="row row8">
+        <div class="letter col1 flipY" id="V">
+          <img class="black" id="blackV" src="images/blackV-8.png" >
+          <svg class="circle" height="180" width="180">
+            <circle class="circle1" cx="90" cy="90" r="90"/>
+          </svg>
+          </circle>
+          </svg>
+          <svg class="circle" height="180" width="180">
+            <circle class="circle2" cx="90" cy="90" r="66"/>
+            </svg>
+          </circle>
+          </svg>
+          <svg class="circle circle3" height="180" width="180">
+            <circle cx="90" cy="90" r="46"/>
+            </svg>
+          </circle>
+          </svg>
+          <img class="white" id="whiteV" src="images/whiteA-8.png" >
+          <svg class="circle" height="180" width="180">
+            <circle class="innerCircle" cx="90" cy="90" r="27"/>
+            </svg>
+          </circle>
+          </svg>
+        </div>
+        <div class="letter col2 rotate270" id="W">
+          <img class="black" id="blackW" src="images/blackE-8.png" >
+          <svg class="circle" height="180" width="180">
+            <circle class="circle1" cx="90" cy="90" r="90"/>
+          </svg>
+          </circle>
+          </svg>
+          <svg class="circle" height="180" width="180">
+            <circle class="circle2" cx="90" cy="90" r="66"/>
+            </svg>
+          </circle>
+          </svg>
+          <svg class="circle circle3" height="180" width="180">
+            <circle cx="90" cy="90" r="46"/>
+            </svg>
+          </circle>
+          </svg>
+          <svg class="circle" id="specialInner" height="180" width="180">
+            <circle class="innerCircle" cx="90" cy="90" r="27"/>
+            </svg>
+          </circle>
+          </svg>
+          <div id="circleBottom">
+            <svg class="circle" height="180" width="180">
+              <circle class="circle1" cx="90" cy="90" r="90"/>
+            </svg>
+            </circle>
+            </svg>
+            <svg class="circle" height="180" width="180">
+              <circle class="circle2" cx="90" cy="90" r="66"/>
+              </svg>
+            </circle>
+            </svg>
+            <svg class="circle circle3" height="180" width="180">
+              <circle cx="90" cy="90" r="46"/>
+              </svg>
+            </circle>
+            </svg>
+            <img class="white" id="whiteW" src="images/whiteE-8.png" >
+            <svg class="circle" id="specialInner" height="180" width="180">
+              <circle class="innerCircle" cx="90" cy="90" r="27"/>
+              </svg>
+            </circle>
+            </svg>
+          </div>
+        </div>
+        <div class="letter col3" id="X">
+          <img class="black" id="blackX" src="images/blackX-8.png" >
+         <!--  <img class="black" id="blackX2" src="images/blackX2-8.png" > -->
+          <svg class="circle" height="180" width="180">
+            <circle class="circle1" cx="90" cy="90" r="90"/>
+          </svg>
+          </circle>
+          </svg>
+          <svg class="circle" height="180" width="180">
+            <circle class="circle2" cx="90" cy="90" r="66"/>
+            </svg>
+          </circle>
+          </svg>
+          <svg class="circle circle3" height="180" width="180">
+            <circle cx="90" cy="90" r="46"/>
+            </svg>
+          </circle>
+          </svg>
+          <img class="white flipY" id="whiteX" src="images/whiteA-8.png" >
+          <svg class="circle" height="180" width="180">
+            <circle class="innerCircle" cx="90" cy="90" r="27"/>
+            </svg>
+          </circle>
+          </svg>
+        </div>
+      </div>
+      <div class="row row9">
+        <div class="letter col1 rotate180" id="Y">
+          <img class="black" id="blackY" src="images/blackH-8.png" >
+          <svg class="circle" height="180" width="180">
+            <circle class="circle1" cx="90" cy="90" r="90"/>
+          </svg>
+          </circle>
+          </svg>
+          <svg class="circle" height="180" width="180">
+            <circle class="circle2" cx="90" cy="90" r="66"/>
+            </svg>
+          </circle>
+          </svg>
+          <svg class="circle circle3" height="180" width="180">
+            <circle cx="90" cy="90" r="46"/>
+            </svg>
+          </circle>
+          </svg>
+          <img class="white" id="whiteY" src="images/whiteH-8.png" >
+          <svg class="circle" height="180" width="180">
+            <circle class="innerCircle" cx="90" cy="90" r="27"/>
+            </svg>
+          </circle>
+          </svg>
+        </div>
+         <div class="letter col2 flipX" id="Z">
+          <img class="black" id="blackZ" src="images/blackS-8.png" >
+          <svg class="circle" height="180" width="180">
+            <circle class="circle1" cx="90" cy="90" r="90"/>
+          </svg>
+          </circle>
+          </svg>
+          <svg class="circle" height="180" width="180">
+            <circle class="circle2" cx="90" cy="90" r="66"/>
+            </svg>
+          </circle>
+          </svg>
+          <svg class="circle circle3" height="180" width="180">
+            <circle cx="90" cy="90" r="46"/>
+            </svg>
+          </circle>
+          </svg>
+          <svg class="circle" id="specialInner" height="180" width="180">
+            <circle class="innerCircle" cx="90" cy="90" r="27"/>
+            </svg>
+          </circle>
+          </svg>
+          <div id="circleBottom">
+            <svg class="circle" height="180" width="180">
+              <circle class="circle1" cx="90" cy="90" r="90"/>
+            </svg>
+            </circle>
+            </svg>
+            <svg class="circle" height="180" width="180">
+              <circle class="circle2" cx="90" cy="90" r="66"/>
+              </svg>
+            </circle>
+            </svg>
+            <svg class="circle circle3" height="180" width="180">
+              <circle cx="90" cy="90" r="46"/>
+              </svg>
+            </circle>
+            </svg>
+            <img class="white" id="whiteZ" src="images/whiteS-8.png" >
+            <svg class="circle" id="specialInner" height="180" width="180">
+              <circle class="innerCircle" cx="90" cy="90" r="27"/>
+              </svg>
+            </circle>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>  
+    
+    $(".letter").mouseenter(function(){
+      var element = this;
+      console.log(element);
+      $(element).find(".circle3").fadeTo(1500, 1);
+      setTimeout(function(){
+        $(element).find(".circle2").fadeTo(1500, 1);}, 800);
+      setTimeout(function(){
+        $(element).find(".circle1").fadeTo(1500, 1);}, 1600);
+      setTimeout(function(){
+        $(element).find(".black").fadeTo(1500, 1);}, 2400);
+    });
+  </script>
+</html>
