@@ -1,0 +1,288 @@
+html, body{
+	width: 100%;
+	height:100%;
+
+}
+
+.skrollr-container{
+	width: 100%;
+	height:100%;
+	overflow:hidden;
+	display: flex;
+}
+
+.sections{
+	position:fixed;
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+	
+}
+
+.section{
+	position:absolute;
+	top:0;
+	left:0;
+	width:50%;
+	height:50%;
+}
+
+.one{
+	background-color: green;
+}
+
+.two{
+	background-color: red;
+
+}
+.three{
+	background-color: blue;
+	
+}
+.four{
+	background-color: yellow;
+	
+}
+
+#helper{
+	/*display:none;*/
+	position:absolute;
+	left:0;
+	top:0;
+	height:400%;
+	width:20px;
+}
+
+.marker{
+	width:100%;
+	height:25%;
+	border: 2px solid black;
+}
+
+.scrollable{
+	position:fixed;
+}
+.opacity{
+	-webkit-filter: blur(0px);
+   	filter: blur(0px);
+	position:fixed;
+	width:40%;
+	top:33%;
+	left:30%;
+}
+.pic1{
+	position:fixed;
+	width:30%;
+	left:20%;
+}
+.pic2{
+	position:fixed;
+	width:25%;
+	left:60%;
+}
+.pic3{
+	position:fixed;
+	width:45%;
+	left:20%;
+}
+.delayed{
+	transition: all ease .6s;
+	position:fixed;
+	width:40%;
+	top:33%;
+	left:30%;
+}
+.cat2{
+	position:fixed;
+	width:40%;
+	top:13%;
+	left:30%;
+}
+.skyline{
+	position:fixed;
+	width:150%;
+	top:30%;
+	left:-59%;
+}
+.skyline2{
+	position:fixed;
+	width:150%;
+	top:30%;
+	left:10%;
+}
+.skyline3{
+	position:fixed;
+	width:150%;
+	top:30%;
+	left:-20%;
+}
+.cloud{
+	width: 50%;
+	top: 10%;
+}
+.rotate90{
+	transform: rotate(90deg);
+}
+.rotate270{
+	transform: rotate(270deg);
+}
+/*.flipX{
+	transform: scaleX(-1);
+}*/
+.cat{
+	-webkit-filter: blur(0px);
+   	filter: blur(0px);
+	position:fixed;
+	width:120%;
+	top:0%;
+	left:-10%;
+}
+.egg{
+	padding-top: 110px;
+	position:fixed;
+	opacity: 1;
+	width:20%;
+	top:35%;
+	left:45%;
+}
+.egg2{
+	position:fixed;
+	opacity: 1;
+	width:20%;
+	top:35%;
+	left:45%;
+}
+.eggContainer{
+	position:fixed;
+	opacity: 1;
+	width:90%;
+	top:35%;
+	left:5%;
+}
+.shell{
+	top:25%;
+	position: absolute;
+}
+.text{
+	position:fixed;
+	font-size: 350pt;
+	font-family: 'Roboto', sans-serif;
+	top:53%;
+	left:40%;
+}
+.text2{
+	position:fixed;
+	font-weight: 100;
+	font-size: 350pt;
+	font-family: 'Roboto', sans-serif;
+	top:5%;
+	left:3%;
+}
+.text3{
+	position:fixed;
+	font-weight: 100;
+	font-size: 360pt;
+	font-family: 'Roboto', sans-serif;
+	top:5%;
+	left:-3%;
+}
+.text4{
+	position:fixed;
+	font-size: 100pt;
+	font-family: 'Roboto', sans-serif;
+	top:30%;
+	left:46%;
+}
+.text5{
+	text-align: center;
+	position:relative;
+	font-size: 100pt;
+	font-family: 'Roboto', sans-serif;
+	top:30%;
+	left:46%;
+}
+.textCenter{
+	position:fixed;
+	justify-content: space-evenly;
+	align-items: center;
+	font-size: 100pt;
+	font-family: 'Roboto', sans-serif;
+	top:30%;
+	left:50%
+}
+.bodyText{
+	text-align: center;
+	position:fixed;
+	font-size: 10pt;
+	font-family: 'Roboto', sans-serif;
+	top:40%;
+	left:0%;
+}
+.rect{
+	background-color: white;
+	position:fixed;
+	top:33%;
+	left:46%;
+	width: 800px;
+	height: 200px;
+}
+.bgImage{
+	position:fixed;
+	height: 100vh;
+	width: 100vw;
+	/*transition: all ease;*/
+}
+
+.flipX{
+	transform: scaleX(-1);
+}
+.svgRect{
+	transition: all ease 1s;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	height: 5%;
+	width: 100%;
+}
+.svgRect2{
+	position: fixed;
+	top: 600px;
+	left: 0px;
+	height: 25%;
+	width: 100%;
+}
+.svgRect3{
+	position: fixed;
+	top: 200px;
+	left: 0px;
+	height: 25%;
+	width: 100%;
+}
+.rect2{
+	transition: all ease 1s;
+	left: 0px;
+	position: fixed;
+	width: 100%;
+	height: 30px;
+	top: 0px;
+	color: blue;
+}
+.rect3{
+	left: 0px;
+	position: fixed;
+	width: 100%;
+	height: 200px;
+	top: 600px;
+	color: blue;
+}
+.rect4{
+	left: 0px;
+	position: fixed;
+	width: 100%;
+	height: 200px;
+	top: 200px;
+	color: blue;
+}
+
+
