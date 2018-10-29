@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FINAL Scroller</title>
+    <!-- <link rel="shortcut icon" href="favicon.ico"> -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/script.js"></script>
+</head>
+
+<body class="demo-3 loading">
+    <div class="skrollr-container blackBG">
+        <div class="circleGrid2" 
+             data-500p="transform:matrix(.05,0,0,.05,-310,-125) rotate(0deg); opacity: 1;" 
+             data-508p="transform:matrix(.05,0,0,.05,-310,-125) rotate(0deg); opacity: 0;" 
+             data-550p="transform:matrix(.05,0,0,.05,-310,-125) rotate(0deg); opacity: 0;" 
+             data-558p="transform:matrix(.05,0,0,.05,-310,-125) rotate(0deg); opacity: 1;" 
+             data-2000p="transform:matrix(.05,0,0,.05,-310,-125) rotate(0deg);" 
+             data-2600p="transform: matrix(0.139806, 0.131359, 0.131359, 0.126537, -310, -125) rotate(0deg); opacity: 1;" 
+             data-2700p="transform: matrix(0.139806, 0, 0.131359, 0, -310, -125) rotate(0deg); opacity: 1;" 
+             data-2800p="transform: matrix(0.139806, 0, 0, 0, -310, -125) rotate(0deg); opacity: 1;" 
+             data-2900p="transform: matrix(0.139806, 0, 0, .7, -310, -125) rotate(0deg); opacity: 1;" 
+             
+             data-4430p="transform: matrix(13, 0, 0, 13, 25, 250) rotate(0deg); opacity: 1;"
+             data-4431p="transform: matrix(13, 0, 0, 13, 25, 250) rotate(0deg); opacity: 0;"
+            
+             data-6000p="transform: matrix(.0246,0,0,.0246,-303,-96.5) rotate(0deg); opacity: 0;"
+             data-6001p="transform: matrix(.0246,0,0,.0246,-303,-96.5) rotate(0deg); opacity: 1;"
+             data-6400p="transform: matrix(1, 0, 0, 1, 0, -400) rotate(90deg); opacity: 1;"
+             data-7269.99p="transform: matrix(10, 0, 10, 10, 160,-275) rotate(90deg); opacity: 1;"
+             data-7270p="transform: matrix(10, 0, 10, 10, 160,-275) rotate(90deg); opacity: 0;"
+             data-8799p="transform:matrix(.392,0, 0, .392,-270,-230) rotate(0deg); opacity: 0;"
+             data-8800p="transform:matrix(.392,0, 0, .392,-270,-230) rotate(0deg); opacity: 1;"
+             data-9100p="transform:matrix(.6,0, 0, .6,-317,-75) rotate(0deg); opacity: 1;"
+             data-9450p="transform:matrix(1,0, 0, 1,-317,-855) rotate(0deg); opacity: 1;"
+             data-10500p="transform:matrix(6,0, 0, 6,-470,-5025) rotate(0deg); opacity: 1;"
+             data-10501p="transform:matrix(6,0, 0, 6,-470,-5025) rotate(0deg); opacity: 0;"
+             >
+            >
+        </div>
+        <div class="circleGrid3"
+             data-4400p="transform: matrix(.384, 0, 0, .384, -314, -240); opacity: 1;"
+             data-6001p="transform: matrix(16, 0, 0, 16, 110, 309); opacity: 1;"
+             data-6002p="transform: matrix(16, 0, 0, 16, 109, 309); opacity: 0;"
+             data-6002p="transform: matrix(16, 0, 0, 16, 109, 309); opacity: 0;"
+             data-7269p="transform: matrix(1, 0, .11, 1, -347, -199); opacity: 0;"
+             data-7270p="transform: matrix(1, 0, .11, 1, -347, -199); opacity: 1;"
+             data-7800p="transform: matrix(3, 0, -2.5, 3, -547, -599); opacity: 1;"
+             data-8500p="transform: matrix(6, 0, 2.5, 6, -399, -599); opacity: 1;"
+             data-8800p="transform: matrix(13, 0, 0, 13, -709, -599); opacity: 1;"
+             data-8801p="transform: matrix(13, 0, 0, 13, -709, -599); opacity: 0;"
+             data-10499p="transform: matrix(13, 0, 0, 13, -709, -599); opacity: 0;"
+             data-10500p="transform: matrix(.73, 0, 0, .73, -310, -100); opacity: 1;"
+             data-10550p="transform: matrix(.73, 0, 0, .73, -310, -100); opacity: 1;"
+             data-11000p="transform: matrix(10, 0, 0, 10, -350, -100)"
+		     data-11350p="transform: matrix(16, 0, 0, 16, -350, -80)"
+             >
+            >
+        </div>
+    </div>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/demo.js"></script>
+    <script src="js/skrollr.min.js"></script>
+    <script type="text/javascript">
+        var s = skrollr.init({});
+    </script>
+    <script>
+        
+        var numColumns = 36;
+        var numCircles = 36;
+        //first circle grid
+        function createCircleGrid() {
+            //create each column populated w/ circleContainer/circles
+            for (var i = 0; i < numColumns; i++) {
+                var newColumn = document.createElement('div');
+                newColumn.className = "column";
+                //populate each column w/ circleContainer/circles
+                for (var j = 0; j < numCircles; j++) {
+                    var newCircleContainer = document.createElement('div');
+                    $(newCircleContainer).addClass('circleContainer');
+                    var newCircle = document.createElement('div');
+                    newCircle.className = "rect";
+                    //red row coloring
+                    if(i < 6){
+                        $(newCircle).attr("data-0p", "background-color: rgb(255,0,0);");
+                        $(newCircle).attr("data-3800p", "background-color: rgb(255,0,0);");
+                        $(newCircle).attr("data-4000p", "background-color: rgb(255,0,0);")
+                    }
+                    //orange row coloring
+                    else if(i < 12){
+                        $(newCircle).attr("data-0p", "background-color: rgb(255,100,0);");
+                        $(newCircle).attr("data-3800p", "background-color: rgb(255,100,0);");
+                        $(newCircle).attr("data-4000p", "background-color: rgb(255,0,0);")
+                    }
+                    //yellow row coloring
+                    else if(i < 18){
+                        $(newCircle).attr("data-0p", "background-color: rgb(255,242,0);");
+                        $(newCircle).attr("data-3800p", "background-color: rgb(255,242,0);");
+                        $(newCircle).attr("data-4000p", "background-color: rgb(255,0,0);")
+                    }
+                    //green row coloring
+                    else if(i < 24){
+                        $(newCircle).attr("data-0p", "background-color: rgb(0,255,0);");
+                        $(newCircle).attr("data-3800p", "background-color: rgb(0,255,0);");
+                        $(newCircle).attr("data-4000p", "background-color: rgb(255,0,0);")
+                    }
+                    //blue row coloring
+                    else if(i < 30){
+                        $(newCircle).attr("data-0p", "background-color: rgb(0,174,239);");
+                        $(newCircle).attr("data-3800p", "background-color: rgb(0,174,239);");
+                        $(newCircle).attr("data-4000p", "background-color: rgb(255,0,0);")
+                    }
+                    //purple row coloring
+                    else if(i < 36){
+                        $(newCircle).attr("data-0p", "background-color: rgb(127,63,152);");
+                        $(newCircle).attr("data-3800p", "background-color: rgb(127,63,152);");
+                        $(newCircle).attr("data-4000p", "background-color: rgb(255,0,0);")
+                    }
+                    
+                    //change middle column yellow to red (1st sequence)
+//                    if(i == 17){
+//                        $(newCircle).attr("data-3800p", "background-color: rgb(255,242,0);");
+//                        $(newCircle).attr("data-4000p", "background-color: rgb(255,0,0);");
+//                    }
+                    //even columns
+                    if (i % 2 === 0) {
+                        $(newCircleContainer).attr("data-0p", "width: 50px; transform: scale(1)");
+                        $(newCircleContainer).attr("data-600p", "width: 50px; transform: scale(10)");
+                        $(newCircleContainer).attr("data-800p", "width: 50px; transform: scale(1)");
+                        $(newCircleContainer).attr("data-950p", "width: 50px; transform: scale(30)");
+                        $(newCircleContainer).attr("data-1100p", "width: 50px; transform: scale(1)");
+                        $(newCircleContainer).attr("data-1250p", "width: 50px; transform: scale(30)");
+                        $(newCircleContainer).attr("data-1300p", "width: 50px; transform: scale(1)");
+                        $(newCircleContainer).attr("data-2000p", "width: 50px; transform: scale(50)");
+                        //begin scale + alternating squares scaled
+                        $(newCircleContainer).attr("data-3000p", "width: 50px; transform: scale(60)");
+                        $(newCircleContainer).attr("data-3400p", "width: 50px; transform: scale(1)");
+                        $(newCircleContainer).attr("data-3800p", "width: 50px; transform: scale(60)");
+                        $(newCircleContainer).attr("data-4000p", "width: 50px; transform: scale(1);");
+                    
+                        $(newCircleContainer).attr("data-6000p", "width: 50px; transform: scale(60)");
+                        //alternating scale on skewed sequence 
+                        $(newCircleContainer).attr("data-6375p", "width: 50px; transform: scale(60);");
+                        $(newCircleContainer).attr("data-6650p", "width: 50px; transform: scale(1);");
+                        $(newCircleContainer).attr("data-7250p", "width: 50px; transform: scale(52)");
+                        $(newCircleContainer).attr("data-7250p", "width: 50px; transform: scale(60)");
+                        $(newColumn).attr("data-8799p", "transform: scaleY(1)");
+                        $(newColumn).attr("data-8800p", "transform: scaleY(3)");
+                        $(newColumn).attr("data-9450p", "transform: scaleY(3)"); 
+                        $(newColumn).attr("data-10050p", "transform: scaleY(.8)"); 
+                        $(newCircleContainer).attr("data-9100p", "width: 50px; transform: scale(60)");
+                        $(newCircleContainer).attr("data-9450p", "width: 50px; transform: scale(10)");
+                        $(newCircleContainer).attr("data-9750p", "width: 50px; transform: scale(10)");
+                        $(newCircleContainer).attr("data-10050p", "width: 50px; transform: scale(60)");
+                           
+                    } 
+                    //odd columns
+                    else {
+                        $(newCircleContainer).attr("data-300p", "width: 50px; transform: scale(1);");
+                        $(newCircleContainer).attr("data-2000p", "width: 50px; transform: scale(1);");
+                        $(newCircleContainer).attr("data-2400p", "width: 50px; transform: scale(1);");
+                        $(newCircleContainer).attr("data-2550p", "width: 50px; transform: scale(1);");
+                        $(newCircleContainer).attr("data-2700p", "width: 50px; transform: scale(1);");
+                        //begin scale + alternating squares scaled
+                        $(newCircleContainer).attr("data-3000p", "width: 50px; transform: scale(1);");
+                        $(newCircleContainer).attr("data-3400p", "width: 50px; transform: scale(60);");
+                        $(newCircleContainer).attr("data-3800p", "width: 50px; transform: scale(1);");
+                        $(newCircleContainer).attr("data-4400p", "width: 50px; transform: scale(60);");
+                        //alternating scale on skewed sequence 
+                        $(newCircleContainer).attr("data-6350p", "width: 50px; transform: scale(60)");
+                        $(newCircleContainer).attr("data-6400p", "width: 50px; transform: scale(1)");
+                        $(newCircleContainer).attr("data-6650p", "width: 50px; transform: scale(60)");
+                        $(newColumn).attr("data-8799p", "transform: scaleY(1)");
+                        $(newColumn).attr("data-9100p", "transform: scaleY(3)");
+                        $(newColumn).attr("data-9450p", "transform: scaleY(.89)");
+                        $(newColumn).attr("data-10500p", "transform: scaleY(3)"); 
+                        $(newCircleContainer).attr("data-9100p", "width: 50px; transform: scale(60)");
+                        $(newCircleContainer).attr("data-9450p", "width: 50px; transform: scale(10)");
+                        $(newCircleContainer).attr("data-9750p", "width: 50px; transform: scale(10)");
+                        $(newCircleContainer).attr("data-10500p", "width: 50px; transform: scale(60)");
+
+                    }
+                    //all columns
+                    //orange to yellow
+                    $(newCircle).attr("data-6650p", "background-color: rgb(255,100,0);");
+                    $(newCircle).attr("data-7250p", "background-color: rgb(255,242,0);");
+                    //yellow to green
+                    $(newCircle).attr("data-8050p", "background-color: rgb(255,242,0);");
+                    $(newCircle).attr("data-8150p", "background-color: rgb(0,255,0);");
+                    //green to blue
+                    $(newCircle).attr("data-9750p", "background-color: rgb(0,255,0);");
+                    $(newCircle).attr("data-10500p", "background-color: rgb(0,174,239);");
+                    $(newColumn).append(newCircleContainer);
+                    $(newCircleContainer).append(newCircle);
+                }
+
+                $(".circleGrid2").append(newColumn)
+            }
+        }
+
+
+        //2nd circle grid
+        function createSecondCircleGrid() {
+            //create each column populated w/ circleContainer/circles
+            for (var i = 0; i < numColumns; i++) {
+                var newColumn = document.createElement('div');
+                newColumn.className = "column";
+                //populate each column w/ circleContainer/circles
+                for (var j = 0; j < numCircles; j++) {
+                    var newCircleContainer = document.createElement('div');
+                    $(newCircleContainer).addClass('circleContainer');
+                    var newCircle = document.createElement('div');
+                    newCircle.className = "rect";
+                    //even columns
+                    if (i % 2 === 0) {
+                         $(newCircleContainer).attr("data-7450p", "width: 50px; transform: scale(1)");
+                        $(newCircleContainer).attr("data-7650p", "width: 50px; transform: scale(20)");
+                        $(newCircleContainer).attr("data-7800p", "width: 50px; transform: scale(20)");
+                        $(newCircleContainer).attr("data-8200p", "width: 50px; transform: scale(1)");
+                        $(newCircleContainer).attr("data-8600p", "width: 50px; transform: scale(1)");
+                        $(newCircleContainer).attr("data-8800p", "width: 50px; transform: scale(20)");
+                    } 
+                    //odd columns
+                    else {
+                        $(newCircleContainer).attr("data-7450p", "width: 50px; transform: scale(20)");
+                        $(newCircleContainer).attr("data-7650p", "width: 50px; transform: scale(1)");
+                        $(newCircleContainer).attr("data-7800p", "width: 50px; transform: scale(1)");
+                        $(newCircleContainer).attr("data-8200p", "width: 50px; transform: scale(20)");
+                        $(newCircleContainer).attr("data-8600p", "width: 50px; transform: scale(20)");
+                        $(newCircleContainer).attr("data-8800p", "width: 50px; transform: scale(1)");
+                    }
+                    //all columns
+                    $(newCircle).attr("data-0p", "background-color: rgb(255,0,0);")
+                    $(newCircle).attr("data-4399.9p", "opacity: 0; width: 120%; height: 120%;");
+                    $(newCircle).attr("data-4400p", "opacity: 1; width: 120%; height: 120%;");
+                    $(newCircle).attr("data-4432p", "opacity: 1; width: 120%; height: 120%;");
+                    $(newCircle).attr("data-4550p", "width: 5%; height: 120%;");
+                    $(newCircle).attr("data-4900p", "width: 120%; height: 100%; rotate(0deg);");
+                    $(newCircle).attr("data-5200p", "width: 120%; height: 5%; rotate(90deg); background-color: rgb(255,0,0);");
+                    $(newCircle).attr("data-6000p", "width: 5%; height: 5%; background-color: rgb(255,100,0);");
+                    $(newCircle).attr("data-7249p", "width: 5%; height: 5%; background-color: rgb(255,100,0);");
+                    $(newCircle).attr("data-7250p", "width: 5%; height: 5%; background-color: rgb(255,242,0);");
+                    //yellow to green
+                    $(newCircle).attr("data-8600p", "background-color: rgb(255,242,0);");
+                    $(newCircle).attr("data-8800p", "background-color: rgb(0,255,0);");
+                    //green to blue
+                    $(newCircle).attr("data-9500p", "background-color: rgb(0,255,0);");
+                    $(newCircle).attr("data-10000p", "background-color: rgb(0,174,239);");
+                    
+                    $(newCircleContainer).attr("data-7249p", "width: 50px; transform: scale(1)");
+                    $(newCircleContainer).attr("data-7250p", "width: 50px; transform: scale(20)");
+                    $(newCircleContainer).attr("data-10000p", "width: 50px; transform: scale(20)");
+                    $(newCircleContainer).attr("data-10500p", "width: 50px; transform: scale(20)");
+                     $(newCircleContainer).attr("data-10700p", "width: 50px; transform: scale(1)");
+
+                    $(newColumn).append(newCircleContainer);
+                    $(newCircleContainer).append(newCircle);
+                    
+        
+                    $(newCircle).attr("data-10700p", "transform: rotate(0deg); height: 5%; width: 5%; background-color: rgb(0,174,239);");
+                    $(newCircle).attr("data-10850p", "transform: rotate(0deg); height: 5%; width: 115%; background-color: rgb(0,174,239);");
+                    $(newCircle).attr("data-10900p", "transform: rotate(90deg); height: 2%; width: 115%; background-color: rgb(0,174,239);");
+                    $(newCircle).attr("data-10950p", "transform: rotate(90deg); height: 115%; width: 115%; background-color: rgb(0,174,239);");
+                    $(newCircle).attr("data-11150p", "transform: rotate(90deg); height: 115%; width: 2%; background-color: rgb(0,174,239);");
+                    $(newCircle).attr("data-11250p", "transform: rotate(180deg); height: 115%; width: 2%; background-color: rgb(0,174,239);");
+                    $(newCircle).attr("data-11350p", "transform: rotate(180deg); height: 115%; width: 115%; background-color: rgb(127,63,152);");
+                    
+                }
+                $(".circleGrid3").append(newColumn)
+            }
+
+        }
+        $(document).click(function() {
+            window.location.href = 'finalScroller.html';
+        })
+        createCircleGrid();
+        createSecondCircleGrid();
+        var s = skrollr.init({});
+        s.refresh();
+    </script>
+</body>
+</html>

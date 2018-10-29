@@ -1,0 +1,403 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+.skrollr-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+}
+
+.one {
+    background-color: green;
+}
+
+.two {
+    background-color: red;
+
+}
+
+.three {
+    background-color: blue;
+
+}
+
+.four {
+    background-color: yellow;
+
+}
+
+#helper {
+    /*display:none;*/
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 400%;
+    width: 20px;
+}
+
+.marker {
+    width: 100%;
+    height: 25%;
+    border: 2px solid black;
+}
+
+.circleContainer {
+    opacity: 1;
+    display: block;
+    flex: 5%;
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+
+.circle {
+    position: relative;
+    background-color: #339933;
+    border-radius: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 2%;
+    height: 2%;
+    color: #33cc33;
+}
+
+.rect {
+    position: relative;
+    background-color: #33cc33;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 2%;
+    height: 2%;
+    color: red;
+    /*	 outline: 3px dotted #33cc33;*/
+}
+
+.rect2 {
+
+    position: relative;
+    background-color: red;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 2%;
+    height: 2%;
+    color: red;
+}
+
+.V {
+    /*width: 200px;*/
+    top: -17.2%;
+    position: fixed;
+    left: 40.6%;
+    color: black;
+    /*transform: translate(-50%, -50%);*/
+}
+
+.A1 {
+    width: 200px;
+    top: 33%;
+    position: fixed;
+    left: 73.9%;
+}
+
+.A2 {
+    width: 200px;
+    top: 33%;
+    position: fixed;
+    left: 7.9%;
+}
+
+.circleShadowed {
+    /*background-blend-mode: multiply;*/
+    box-shadow: 0 0 10px cyan;
+    position: relative;
+    background-color: red;
+    border-radius: 100%;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    width: 2%;
+    height: 2%;
+    color: red;
+}
+
+.column {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.circleGrid {
+    top: -10%;
+    /*transition: 1s ease;*/
+    transform-origin: center;
+    position: fixed;
+    display: flex;
+    width: 2000px;
+    height: 1000px;
+    color: #33cc33 !important;
+}
+
+.lineGrid {
+    top: -10%;
+    transition: 1s ease;
+    position: fixed;
+    display: flex;
+    width: 2000px;
+    height: 1000px;
+}
+
+.circleGrid2 {
+    top: -10%;
+    position: fixed;
+    transform-origin: center;
+    display: flex;
+    width: 2000px;
+    height: 1000px;
+}
+
+.circleGrid3 {
+    z-index: 1000;
+    top: -10%;
+    transform-origin: center;
+    position: fixed;
+    display: flex;
+    width: 2000px;
+    height: 1000px;
+}
+
+.redRect {
+    /*background-blend-mode: multiply;*/
+    height: 600px;
+    position: fixed;
+    top: 0%;
+    /*background-color: cyan;*/
+}
+
+.letter {
+
+    /*color: red;*/
+    font-size: 220pt;
+    font-weight: bolder;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 10pt;
+}
+
+.helloText {
+    top: 299px !important;
+    left: 601px;
+}
+
+.smallText {
+    /*mix-blend-mode: multiply;*/
+    transform-origin: center center !important;
+    position: fixed;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14pt;
+    font-weight: bolder !important;
+    color: black !important;
+    z-index: 1000;
+    letter-spacing: 10pt;
+}
+
+.text {
+    position: fixed;
+    color: #eb2449;
+    font-family: 'Raleway', sans-serif;
+    top: 39%;
+    left: 42.3%;
+}
+
+span {
+    /*position: absolute;*/
+}
+
+.smallTextContainer {
+    display: flex;
+    justify-content: space-around;
+    width: 450px;
+    top: 20%;
+    left: 48.6%;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    color: #33cc33 !important;
+}
+.blackTextContainer {
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bolder !important;
+    z-index: 1000;
+    letter-spacing: 80pt;
+}
+
+.homeContainer1 {
+    display: flex;
+    justify-content: stretch;
+    width: 950px;
+    top: 50%;
+    left: 46.6%;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    color: #33cc33 !important;
+}
+
+.homeContainer2 {
+    display: flex;
+    justify-content: space-around;
+    width: 750px;
+    top: 428px;
+    left: 78.6%;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    color: black!important;
+}
+
+.homeText {
+    font-size: 18pt !important;
+}
+
+.greenText {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14pt;
+    font-weight: bolder !important;
+    display: inline-block;
+    color: #33cc33 !important;
+}
+
+.gridImage {
+    top: 17%;
+    left: -1%;
+    position: fixed;
+    width: 18%;
+    filter: invert(100%);
+}
+
+.borderLine {
+    position: fixed;
+    left: -10%;
+    top: 20%;
+    width: 300px;
+    height: 200px;
+    border-color: red;
+    border-width: 5px;
+    border-style: solid;
+}
+
+#grid2 {
+    color: white;
+    /*opacity: .7!important;*/
+}
+
+.stripe {
+    width: 100%;
+    height: 5px;
+    background-color: deepskyblue;
+    position: fixed;
+}
+
+.textContainer {
+    font
+}
+
+.sorryText {
+    font-size: 105pt;
+    left: 53%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.iText{
+   
+}
+.dontText{
+    position: fixed;
+    top: 28%;
+    left: 49.48%;
+    letter-spacing: 29.45pt;
+    color: black !important;
+}
+
+
+
+.blackText {
+    font-family: 'Raleway', sans-serif;
+    font-size: 99pt;
+    letter-spacing: 50pt;
+    font-weight: bolder !important;
+    color: black;
+}
+
+.topContainer {
+    left: 53%;
+    top: 35%;
+    position: fixed;
+    display: flex;
+    width: 500px;
+    justify-content: space-around;
+    transform: translate(-50%, -50%);
+}
+
+.bottomContainer1 {
+    position: fixed;
+    left: 53%;
+    top: 50%;
+    display: flex;
+    width: 500px;
+    justify-content: space-around;
+    transform: translate(-50%, -50%);
+    font-size: 109pt !important;
+    letter-spacing: 70pt !important;
+}
+
+.bottomContainer2 {
+    position: fixed;
+    left: 53%;
+    top: 75%;
+    display: flex;
+    width: 500px;
+    justify-content: space-around;
+    transform: translate(-50%, -50%);
+    font-size: 109pt !important;
+    letter-spacing: 70pt !important;
+}
+
+.niceText {
+    position: fixed;
+    left: 354px;
+    top: 123px;
+    font-size: 21pt;
+}
+
+.toText {
+    top: 123px;
+    font-size: 21pt;
+    color: black !important;
+    position: fixed;
+    left: 989px;
+}
+
+.youText {
+    color: black !important;
+    font-size: 21pt !important;
+    position: fixed;
+    left: 964px;
+    top: 523px;
+}
+
+.meetText {
+    color: black !important;
+    font-size: 21pt !important;
+    position: fixed;
+    left: 354px;
+    top: 523px;
+    letter-spacing: 9pt;
+}
