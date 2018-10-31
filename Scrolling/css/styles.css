@@ -401,3 +401,42 @@ span {
     top: 523px;
     letter-spacing: 9pt;
 }
+
+.colorSVG {
+    position: fixed;
+    top: 47%;
+    left: 30%;
+    width: 100px;
+}
+
+.scrollText {
+    position: fixed;
+    width: 100px;
+    left: 65%;
+    top: 47%;
+}
+
+.colorText {
+    position: fixed;
+    top: 47%;
+    left: 30%;
+    width: 100px;
+}
+
+.jumpText {
+    position: fixed;
+    width: 300px;
+    left: 39%;
+    top:49%;
+    cursor: pointer;
+    z-index: 10000 !important;
+}
+.cls-7{
+    cursor: pointer;
+}
+.cls-7:hover{
+    cursor: pointer;
+}
+.jumpText:hover{
+    cursor: pointer;
+}
