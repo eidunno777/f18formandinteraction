@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch" rel="stylesheet">
+    <title>Resize</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.js"></script>
+</head>
+
+<body>
+    <!--    <button class="but" onclick="rotate()">Apply Rotation</button>-->
+    <div class='mainContainer'>
+        <div id="recurseContainer">
+            <div id="firstRect" class="recursiveOuter">
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    var numIterations = 40;
+    var initialScale = 400;
+    var scaleInterval = initialScale / numIterations;
+    //create recursive tunnel
+    function createTunnel() {
+        var last;
+        for (var i = 0; i < numIterations; i++) {
+            var newScale = initialScale - (scaleInterval * i);
+            var scaleRatio = newScale / initialScale;
+            var newOuter = document.createElement('div');
+            newOuter.className = "recursiveOuter";
+            //            $(newInner).css("transform", "scale(" + scaleRatio + ") , translate(-50%, -50%)");
+            last = $(".recursiveOuter").last();
+            $(last).append(newOuter);
+        }
+    }
+    createTunnel();
+    var iterations = 0;
+    var allOuters = $("#recurseContainer").find(".recursiveOuter");
+
+
+    //     setTimeout(function() {
+    //         $(allOuters[i]).addClass('rotateAnim');
+    //    }, 1300);
+
+//    setTimeout(function() {
+//        rotate()
+//    }, 1900);
+
+    function rotate() {
+
+        for (var i = 0; i < allOuters.length; i++) {
+            //            $(allOuters[i]).css("transform", "rotate(25deg) translate(-50%, -50%)");
+            $(allOuters[i]).addClass('rotateAnim');
+        }
+    }
+
+    var minScaleRange = 65;
+    var maxScaleRange = 110;
+    var minBrowserHeight = 200;
+    var maxBrowserHeight = 700;
+
+    $(window).resize(function() {
+        var newScale = minScaleRange + ((maxScaleRange - minScaleRange) / (maxBrowserHeight - minBrowserHeight)) * ($(window).height() - minBrowserHeight);
+        
+        console.log(newScale);
+        console.log("HEIGHT: " + $(window).height());
+        (function scaleDownLoop(i) {
+            $(allOuters[i]).css("width", "" + newScale + "%");
+                $(allOuters[i]).css("height", "" + newScale + "%");
+                if (--i) {
+                    scaleDownLoop(i);
+                }
+        })(numIterations);
+    });
+//        (function scaleDownLoop(i) {
+//            setTimeout(function() {
+//                $(allOuters[i]).css("width", "100%");
+//                $(allOuters[i]).css("height", "100%");
+//                if (--i) {
+//                    scaleDownLoop(i);
+//                }
+//            }, 50)
+//        })(numIterations);
+
+    //         (function scaleUpLoop(i) {
+    //            setTimeout(function() {
+    //                $(allOuters[i]).css("width", "95%");
+    //                $(allOuters[i]).css("height", "95%");
+    //                if (--i) {
+    //                    scaleUpLoop(i);
+    //                }
+    //            }, 50)
+    //        })(numIterations);
+</script>
+
+</html>

@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch" rel="stylesheet">
+    <title>Resize</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.js"></script>
+</head>
+
+<body>
+    <!--    <button class="but" onclick="rotate()">Apply Rotation</button>-->
+    <div class='mainContainer'>
+        <video autoplay loop id="video">
+          <source src="videos/finalOpSize.mp4" type="video/mp4">
+        </video>
+    </div>
+</body>
+<script>
+    var vid = document.getElementById("video");
+    
+    var minPlaybackRate = 2;
+    var maxPlaybackRate = .5;
+    var minBrowserHeight = 200;
+    var maxBrowserHeight = 700;
+
+    $(window).resize(function() {
+        var newPlaybackRate = minPlaybackRate + ((maxPlaybackRate - minPlaybackRate) / (maxBrowserHeight - minBrowserHeight)) * ($(window).height() - minBrowserHeight);
+        
+        console.log(newPlaybackRate);
+        vid.play();
+        vid.playbackRate = newPlaybackRate;
+    });
+//    $("#negative").click(function() { // button function for rewind
+//   intervalRewind = setInterval(function(){
+//       video.playbackRate = 1.0;
+//       if(video.currentTime == 0){
+//           clearInterval(intervalRewind);
+//           video.pause();
+//       }
+//       else{
+//           video.currentTime += -.1;
+//       }
+//                },30);
+//});
+</script>
+
+</html>
